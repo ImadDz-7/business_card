@@ -15,8 +15,12 @@ class BusinessCard extends StatelessWidget {
         body: Column(
           children: [
             CircleAvatar(
-              radius: 100,
-              backgroundImage: AssetImage('images/rider.jpg'),
+              backgroundColor: Colors.white,
+              radius: 102,
+              child: CircleAvatar(
+                radius: 100,
+                backgroundImage: AssetImage('images/rider.jpg'),
+              ),
             ),
           ],
         ),
