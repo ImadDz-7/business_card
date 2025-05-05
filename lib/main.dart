@@ -41,7 +41,10 @@ class BusinessCard extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: Container(
                 height: 65,
-                color: Colors.white,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10)
+                ),
                 child: Row(
                   children: [
                     Icon(
