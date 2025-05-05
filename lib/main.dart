@@ -30,6 +30,13 @@ class BusinessCard extends StatelessWidget {
                 fontFamily: 'Pacifico',
               ),
             ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontSize: 12,
+                color: Color(0xff6c8090),
+              ),
+            ),
           ],
         ),
       ),
