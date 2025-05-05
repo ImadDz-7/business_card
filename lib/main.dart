@@ -68,6 +68,37 @@ class BusinessCard extends StatelessWidget {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Icon(
+                        Icons.email,
+                        size: 32,
+                        color: Color(0xff2b475e),
+                      ),
+                    ),
+                    Spacer(flex: 1),
+                    Text(
+                      'imad-dz@gmail.com',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Color(0xff2b475e),
+                      ),
+                    ),
+                    Spacer(flex: 3),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
