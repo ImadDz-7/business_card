@@ -37,6 +37,29 @@ class BusinessCard extends StatelessWidget {
                 color: Color(0xff6c8090),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Container(
+                height: 65,
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      size: 32,
+                      color: Color(0xff2b475e),
+                    ),
+                    Text(
+                      '(+213) 0123456789',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Color(0xff2b475e),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
