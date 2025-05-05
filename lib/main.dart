@@ -47,11 +47,15 @@ class BusinessCard extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Icon(
-                      Icons.phone,
-                      size: 32,
-                      color: Color(0xff2b475e),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Icon(
+                        Icons.phone,
+                        size: 32,
+                        color: Color(0xff2b475e),
+                      ),
                     ),
+                    Spacer(flex: 1),
                     Text(
                       '(+213) 0123456789',
                       style: TextStyle(
@@ -59,6 +63,7 @@ class BusinessCard extends StatelessWidget {
                         color: Color(0xff2b475e),
                       ),
                     ),
+                    Spacer(flex: 3),
                   ],
                 ),
               ),
