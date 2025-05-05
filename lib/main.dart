@@ -22,6 +22,14 @@ class BusinessCard extends StatelessWidget {
                 backgroundImage: AssetImage('images/rider.jpg'),
               ),
             ),
+            Text(
+              'Imad Dz',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 32,
+                fontFamily: 'Pacifico',
+              ),
+            ),
           ],
         ),
       ),
