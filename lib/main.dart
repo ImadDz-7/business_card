@@ -11,8 +11,9 @@ class BusinessCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xFF2B475E),
+        backgroundColor: const Color(0xFF2B475E),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               backgroundColor: Colors.white,
@@ -35,7 +36,15 @@ class BusinessCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: 12,
                 color: Color(0xff6c8090),
+                fontWeight: FontWeight.bold,
               ),
+            ),
+            Divider(
+              color: Color(0xff6C8090),
+              indent: 50,
+              endIndent: 50,
+              height: 10,
+              thickness: 0.5,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8,),
