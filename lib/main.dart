@@ -38,7 +38,7 @@ class BusinessCard extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8,),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
@@ -48,14 +48,13 @@ class BusinessCard extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16, right: 24,),
                       child: Icon(
                         Icons.phone,
                         size: 32,
                         color: Color(0xff2b475e),
                       ),
                     ),
-                    Spacer(flex: 1),
                     Text(
                       '(+213) 0123456789',
                       style: TextStyle(
@@ -63,13 +62,13 @@ class BusinessCard extends StatelessWidget {
                         color: Color(0xff2b475e),
                       ),
                     ),
-                    Spacer(flex: 3),
+                    
                   ],
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8,),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
@@ -79,14 +78,13 @@ class BusinessCard extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16, right: 24,),
                       child: Icon(
                         Icons.email,
                         size: 32,
                         color: Color(0xff2b475e),
                       ),
                     ),
-                    Spacer(flex: 1),
                     Text(
                       'imad-dz@gmail.com',
                       style: TextStyle(
@@ -94,7 +92,6 @@ class BusinessCard extends StatelessWidget {
                         color: Color(0xff2b475e),
                       ),
                     ),
-                    Spacer(flex: 3),
                   ],
                 ),
               ),
