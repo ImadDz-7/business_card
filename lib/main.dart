@@ -15,7 +15,7 @@ class BusinessCard extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               backgroundColor: Colors.white,
               radius: 92,
               child: CircleAvatar(
@@ -23,7 +23,7 @@ class BusinessCard extends StatelessWidget {
                 backgroundImage: AssetImage('images/rider.jpg'),
               ),
             ),
-            Text(
+            const Text(
               'Imad Dz',
               style: TextStyle(
                 color: Colors.white,
@@ -31,7 +31,7 @@ class BusinessCard extends StatelessWidget {
                 fontFamily: 'Pacifico',
               ),
             ),
-            Text(
+            const Text(
               'FLUTTER DEVELOPER',
               style: TextStyle(
                 fontSize: 12,
@@ -39,78 +39,33 @@ class BusinessCard extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Divider(
+            const Divider(
               color: Color(0xff6C8090),
               indent: 50,
               endIndent: 50,
               height: 10,
               thickness: 0.5,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            Card(
+              margin: const EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 8,
               ),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        left: 16,
-                        right: 24,
-                      ),
-                      child: Icon(
-                        Icons.phone,
-                        size: 32,
-                        color: Color(0xff2b475e),
-                      ),
-                    ),
-                    Text(
-                      '(+213) 0123456789',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Color(0xff2b475e),
-                      ),
-                    ),
-                  ],
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 32,
+                  color: Color(0xff2b475E),
                 ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 8,
-              ),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        left: 16,
-                        right: 24,
-                      ),
-                      child: Icon(
-                        Icons.email,
-                        size: 32,
-                        color: Color(0xff2b475e),
-                      ),
-                    ),
-                    Text(
-                      'imad-dz@gmail.com',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Color(0xff2b475e),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  '(+213) 0123456789',
+                  style: TextStyle(
+                    color: Color(0xff2b475E),
+                    fontSize: 18,
+                  ),
                 ),
               ),
             ),
@@ -122,14 +77,14 @@ class BusinessCard extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: ListTile(
+              child: const ListTile(
                 leading: Icon(
-                  Icons.gamepad,
+                  Icons.email,
                   size: 32,
                   color: Color(0xff2b475E),
                 ),
                 title: Text(
-                  'Snake Dz',
+                  'imad-dz@gmail.com',
                   style: TextStyle(
                     color: Color(0xff2b475E),
                     fontSize: 18,
