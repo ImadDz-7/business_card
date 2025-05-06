@@ -47,17 +47,22 @@ class BusinessCard extends StatelessWidget {
               thickness: 0.5,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8,),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10)
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)),
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 16, right: 24,),
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        right: 24,
+                      ),
                       child: Icon(
                         Icons.phone,
                         size: 32,
@@ -71,23 +76,27 @@ class BusinessCard extends StatelessWidget {
                         color: Color(0xff2b475e),
                       ),
                     ),
-                    
                   ],
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8,),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10)
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)),
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 16, right: 24,),
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        right: 24,
+                      ),
                       child: Icon(
                         Icons.email,
                         size: 32,
@@ -102,6 +111,29 @@ class BusinessCard extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+              ),
+            ),
+            Card(
+              margin: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: ListTile(
+                leading: Icon(
+                  Icons.gamepad,
+                  size: 32,
+                  color: Color(0xff2b475E),
+                ),
+                title: Text(
+                  'Snake Dz',
+                  style: TextStyle(
+                    color: Color(0xff2b475E),
+                    fontSize: 18,
+                  ),
                 ),
               ),
             ),
